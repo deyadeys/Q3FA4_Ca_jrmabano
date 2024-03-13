@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = prompt("Value of first side:");
+        var e = prompt("Value of second side:");
+        var a = prompt("Value of third side:");
+
+        if(isNaN(d) || isNaN(e) || isNaN(a)){
+            window.alert("What you entered are not valid. Please enter NUMBERS.");
+        }
+        else{
+            determineTriangle(d,e,a);
+        }
+
+    function determineTriangle(d, e, a)
+    {
+        if (d===e && e===a){
+            window.alert("The triangle is EQUILATERAL.");
+        }
+        else if (d===e || d===a || e===a){
+            window.alert("The triangle is ISOSCELES.");
+        }
+        else{
+            window.alert("The triangle is SCALENE.");
+        }
+    }
+
+    </script>
+</body>
+</html>
